@@ -6,12 +6,6 @@
     margin: 0;
 }
 
-body {
-    font-family: 'Hanken Grotesk', sans-serif;
-    font-size: 18px;
-
-}
-
 :root {
     --Light-red: hsl(0, 100%, 67%);
     --Orangey-yellow: hsl(39, 100%, 56%);
@@ -29,16 +23,26 @@ body {
     --Dark-gray-blue: hsl(224, 30%, 27%);
 }
 
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 18px;
+    display: flex;
+    min-height: 100vh;
+}
+
 .container {
+    flex: 1;
     text-align: center;
     font-size: inherit;
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
     display: flex;
     flex-direction: column;
     min-height: 300px;
-    background-color: hsl(241, 81%, 58%);
+    background-color: var(--Light-royal-blue);
     justify-content: space-around;
     align-items: center;
     color: white;
@@ -47,19 +51,20 @@ body {
     border-bottom-right-radius: 10%;
 }
 
-.header > h2 {
+.header h2 {
     color: var(--White);
     opacity: .7;
     font-size: .8em;
     font-size: 500;
+    margin-top: 5px;
 }
 
 .header .circle {
     border-radius: 50%;
     background-image: linear-gradient(var(--Violet-blue), var(--Persian-blue));
     color: white;
-    width: 110px;
-    height: 110px;
+    width: 120px;
+    height: 120px;
     padding: 20px;
 }
 
@@ -171,7 +176,6 @@ body {
 
 .summary a {
     flex-grow: 1;
-    background-color: yellow;
     border-radius: 30px;
     padding: 16px 0;
     margin-top: 10px;
@@ -179,6 +183,70 @@ body {
     color: var(--Pale-blue);
     background-color: var(--Dark-gray-blue);
     font-weight: 800;
+}
+
+/********************************************************************/
+
+/* and now designing the desktop view */
+@media(min-width: 687px) {
+    body {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        flex-direction: row;
+        max-width: 650px;
+        min-height: 380px;
+        border-radius: 30px;
+        box-shadow: 8px 8px 20px var(--Pale-blue);
+    }
+
+    .header {
+        border-radius: 30px;
+        width: 50%;
+        padding: 15px;
+        flex: 1 0 50%;
+    }
+
+    .header h2 {
+        font-size: 1.1em;
+        margin-top: 0;
+    }
+
+    .header .circle {
+        width: 170px;
+        height: 170px;
+        padding: 40px;
+    }
+
+    .header .circle div:nth-of-type(1) {
+        font-size: 3em;
+    }
+
+    .header .circle div:nth-of-type(2) {
+        font-size: .8em;
+    }
+
+    .header .description {
+        max-width: 65%;
+    }
+
+    .header .description h1 {
+        font-size: 1.5em;
+    }
+
+    .summary {
+        flex: 1 0 50%;
+        margin-top: 10px;
+    }
+
+    .summary a {
+        transition: background-color 0.2s;
+    }
+    .summary a:hover {
+        background-color: var(--Light-royal-blue);
+    }
 }
 
 

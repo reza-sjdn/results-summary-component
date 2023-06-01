@@ -30,8 +30,8 @@ but I was wrong. It took me hours to complete it and through it I learned lots o
 
 ### Links
 
-- Solution URL: [](https://github.com/reza-sjdn/results-summary-component)
-- Live Site URL: [](https://reza-sjdn.github.io/results-summary-component/)
+- [Solution URL](https://github.com/reza-sjdn/results-summary-component)
+- [Live Demo](https://reza-sjdn.github.io/results-summary-component/)
 
 ## My process
 
@@ -59,6 +59,7 @@ I'm gonna learn Sass and from now on I wanna incorperate this tool into Css.
 ## Author
 
 You could follow me on these platforms:
+
 - Frontend Mentor - [@reza-sjdn](https://www.frontendmentor.io/profile/reza-sjdn)
 - Twitter - [@reza_sjdn](https://www.twitter.com/reza_sjdn)
 - Telegram - [@reza_sjdn80]

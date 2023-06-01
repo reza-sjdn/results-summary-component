@@ -24,9 +24,13 @@ but I was wrong. It took me hours to complete it and through it I learned lots o
 
 ### Screenshot
 
-- Desktop view
+- Desktop View
 
 ![](./screenshot.png)
+
+- Mobile View
+
+![](./mobile-screenshot.png)
 
 ### Links
 

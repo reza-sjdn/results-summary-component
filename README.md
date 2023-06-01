@@ -50,7 +50,8 @@ but I was wrong. It took me hours to complete it and through it I learned lots o
 ### What I learned
 
 In fact I didn't learned any new thing, but reviewed past concepts.
-Of course I read an article about mobile-first workflow.
+Of course I read an article about mobile-first workflow and learned more
+about chrome dev tools.
 
 ### Continued development
 

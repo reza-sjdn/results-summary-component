@@ -228,10 +228,6 @@ body {
         font-size: .8em;
     }
 
-    .header .description {
-        max-width: 65%;
-    }
-
     .header .description h1 {
         font-size: 1.5em;
     }
